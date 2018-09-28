@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Title</h1>
+    </header>
+    <main>
+        <div id="description">
+            <p></p>
+        </div>
+        <div class="container form">
+            <form id="survey-form" method="GET" action="">
+                <div class="personal-info">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your Name">
+    
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="mail@example.com">
+    
+                    <label for="number">Age</label>
+                    <input id="number" type="number" placeholder="Your Age" min="21" max="110">
+                </div>
+                <div class="selects">
+                    <label for="">Select your country</label>
+                    <select name="" id="dropdown">
+                        <option value="">Colombia</option>
+                        <option value="">Argentina</option>
+                        <option value="">Estados Unidos</option>
+                        <option value="">Mexico</option>
+                    </select>
+                </div>
+                <div class="radio-buttons">
+                    <label for="">Selects</label>
+                    <div>
+                        <input type="radio" name="" value=""><br>
+                        <input type="radio" name="" value=""><br>
+                        <input type="radio" name="" value=""><br>
+                        <input type="radio" name="" value=""><br>
+                    </div>
+                </div>
+                <div class="checkbox-buttons">
+                    <label for="">Radios</label>
+                    <div>
+                        <input type="checkbox" value=""><br>
+                        <input type="checkbox" value=""><br>
+                        <input type="checkbox" value=""><br>
+                        <input type="checkbox" value=""><br>
+                    </div>
+                </div>
+                <div class="textarea">
+                    <label for=""></label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
