@@ -6,61 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 id="title">Survey Title</h1>
-    </header>
-    <main>
-        <div id="description">
-            <p></p>
-        </div>
-        <div class="container form">
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Title</h1>
+        </header>
+        <p id="description">This is a example for a Survey Form</p>
+        <div class="container-form">
             <form id="survey-form" method="GET" action="">
                 <div class="personal-info">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="Your Name">
-    
-                    <label for="email">E-mail</label>
-                    <input id="email" type="email" placeholder="mail@example.com">
-    
-                    <label for="number">Age</label>
-                    <input id="number" type="number" placeholder="Your Age" min="21" max="110">
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input class="input-field" id="name" type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email">E-mail</label>
+                        <input class="input-field" id="email" type="email" placeholder="mail@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age</label>
+                        <input class="input-field" id="number" type="number" placeholder="Your Age" pattern="[0-9]" min="21" max="110">   
+                    </div>
                 </div>
                 <div class="selects">
-                    <label for="">Select your country</label>
-                    <select name="" id="dropdown">
-                        <option value="">Colombia</option>
-                        <option value="">Argentina</option>
-                        <option value="">Estados Unidos</option>
-                        <option value="">Mexico</option>
-                    </select>
-                </div>
-                <div class="radio-buttons">
-                    <label for="">Selects</label>
-                    <div>
-                        <input type="radio" name="" value=""><br>
-                        <input type="radio" name="" value=""><br>
-                        <input type="radio" name="" value=""><br>
-                        <input type="radio" name="" value=""><br>
+                    <div class="form-group">
+                        <label for="">Select your country</label>
+                        <select name="" id="dropdown">
+                            <option value="">Colombia</option>
+                            <option value="">Argentina</option>
+                            <option value="">Estados Unidos</option>
+                            <option value="">Mexico</option>
+                        </select>
                     </div>
                 </div>
-                <div class="checkbox-buttons">
-                    <label for="">Radios</label>
-                    <div>
-                        <input type="checkbox" value=""><br>
-                        <input type="checkbox" value=""><br>
-                        <input type="checkbox" value=""><br>
-                        <input type="checkbox" value=""><br>
+                <div class="form-group">
+                    <div class="radio-buttons">
+                        <label for="">What is your option?</label>
+                        <div>
+                            <input type="radio" name="option" value="1" >Option<br>
+                            <input type="radio" name="option" value="1" >Option<br>
+                            <input type="radio" name="option" value="1" >Option<br>
+                            <input type="radio" name="option" value="1" >Option<br>
+                        </div>
                     </div>
                 </div>
-                <div class="textarea">
-                    <label for=""></label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="form-group">
+                    <div class="checkbox-buttons">
+                        <label for="">What are your options?</label>
+                        <div>
+                            <input type="checkbox" value="1">Checkbox<br>
+                            <input type="checkbox" value="2">Checkbox<br>
+                            <input type="checkbox" value="3">Checkbox<br>
+                            <input type="checkbox" value="4">Checkbox<br>
+                        </div>
+                    </div>
                 </div>
-                <input id="submit" type="submit" value="Submit">
+                <div class="form-group">
+                    <div class="textarea">
+                        <label for=""></label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input id="submit" type="submit" value="Submit">
+                </div>                
             </form>
         </div>
-    </main>
+        <footer>
+            <div class="contact me">
+                <p>Create by: <a href="https://www.freecodecamp.org/florezsebas">Sebastian Florez</a></p>
+            </div>
+            <div class="copyright">
+                <p><i class="fas fa-copyright">Copyright 2018</i></p>
+            </div>
+        </footer>
+    </div>    
 </body>
 </html>
